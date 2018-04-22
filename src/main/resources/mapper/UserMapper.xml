@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.ges.nm.mapper.UserMapper">
+
+    <!--查询所有员工-->
+    <select id="findAll" resultMap="userResultMap">
+        select * from nm_user
+    </select>
+
+    <!--添加一个新员工,ID自增-->
+    <insert id="addUser" parameterType="cn.ges.nm.domain.User">
+        INSERT INTO nm_user ( gmt_create, gmt_modified, user_name, user_ip, user_mac, user_department )
+        VALUES
+	    (#{gmtCreate},#{gmtModified},#{userName},#{userIp},#{userMac},#{userDepartment});
+    </insert>
+            
+    <!--resultMap-->
+    <resultMap type="cn.ges.nm.domain.User" id="userResultMap">
+        <id property="id" column="id"/>
+        <result property="gmtCreate" column="gmt_create"/>
+        <result property="gmtModified" column="gmt_modified"/>
+        <result property="userName" column="user_name"/>
+        <result property="userIp" column="user_ip"/>
+        <result property="userMac" column="user_mac"/>
+        <result property="userDepartment" column="user_department"/>
+        <result property="isDimission" column="is_dimission"/>
+    </resultMap>
+
+                  
+</mapper>
