@@ -1,21 +1,32 @@
 package cn.ges.nm.domain;
 
 import java.util.Date;
-
+/**
+ * @author gespent@163.com
+ */
 public class User {
     private Integer id;
-    // 主动创建时间
+    /**
+     * 主动创建时间
+     */
     private Date gmtCreate;
-    // 被动更新时间
+    /**
+     * 被动更新时间
+     */
     private Date gmtModified;
 
     private String userName;
     private String userIp;
     private String userMac;
 
-    // 用户部门ID
+    /**
+     * 用户部门ID
+     */
+
     private Integer userDepartment;
-    //  是否离职 1为离职 0为在职
+    /**
+     * 是否离职 1为离职 0为在职
+     */
     private int isDimission;
 
     public Integer getId() {
