@@ -5,16 +5,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 /**
+ * 导航Controller，所有未映射的页面均以此处理
  * @author gespent@163.com
  */
 @Controller
 public class GuideController {
 
-    /**
-     * 导航Controller，所有未映射的页面均以此处理
-     *
-     * @return
-     */
 
     /**
      * 返回的页面后缀

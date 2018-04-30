@@ -11,6 +11,11 @@ public class NmApplicationTests {
 
 	@Test
 	public void contextLoads() {
+//		DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+//		System.out.println(df.format(LocalDateTime.now()));
+
+//		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+//		LocalDate date= LocalDate.parse("1996-06-23 12:23:23", dateTimeFormatter);
 	}
 
 }

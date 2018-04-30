@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <p>{{ message }}</p>
+    <input v-model="message">
+</div>
+
+<script>
+    new Vue({
+        el:'#app',
+        data: {
+            message:'Hello World!'
+        }
+    });
+</script>
+
+</body>
+</html>
